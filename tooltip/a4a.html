@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8" />
+    <title>CSS3 tooltip</title>
+
+    <style type="text/css">
+        .tooltip {
+            display: inline;
+            position: relative;
+        }
+/*
+        .tooltip:hover:before {
+            border: solid;
+            border-color: #333 transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 20px;
+            content: "";
+            left: 50%;
+            position: absolute;
+            z-index: 99;
+        }
+*/
+        .tooltip:hover:after {
+            background: #333;
+            background: rgba(0, 0, 0, .8);
+            border-radius: 5px;
+            top: -200px;
+/*            bottom: 26px;*/
+            color: #fff;
+            content: attr(jv);
+            left: 20%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+/*            width: 200px;        // 220px*/
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <figure class="box">
+        <a class="tooltip" jv="something else" href="#">
+            <img src="images/yoda_square.png" alt="Yoda - Wise old Jedi master">
+        </a>
+        <figcaption>
+            <p itemprop="character">Yoda</p>Wise old Jedi master
+        </figcaption>
+    </figure>
+
+    <hr>
+    <figure class="box tooltip" jv="something else">
+        <img src="images/yoda_square.png" alt="Yoda - Wise old Jedi master">
+        <figcaption>
+            <p itemprop="character">Yoda</p>Wise old Jedi master
+        </figcaption>
+    </figure>
+
+</body>
+
+</html>
+
+<!--
+original:
+        .tooltip {
+            display: inline;
+            position: relative;
+        }
+        .tooltip:hover:before {
+            border: solid;
+            border-color: #333 transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 20px;
+            content: "";
+            left: 50%;
+            position: absolute;
+            z-index: 99;
+        }
+        .tooltip:hover:after {
+            background: #333;
+            background: rgba(0, 0, 0, .8);
+            border-radius: 5px;
+            bottom: 26px;
+            color: #fff;
+            content: attr(title);
+            left: 20%;
+            padding: 5px 15px;
+            position: absolute;
+            z-index: 98;
+            width: 450px;        // 220px
+        }
+-->
+
+<!--
+view-source:http://netdna.webdesignerdepot.com/uploads7/how-to-create-a-simple-css3-tooltip/tooltip_demo.html#
+-->
+
+
+<!--
+    <a href="#" title="This is some information for our tooltip." class="tooltip"><span title="More">CSS3 Tooltip</span></a>
+    <hr>
+    <figure class="box tooltip" title="something else">
+        <img src="images/yoda_square.png" alt="Yoda - Wise old Jedi master">
+        <figcaption>
+            <p itemprop="character">Yoda</p>Wise old Jedi master
+        </figcaption>
+    </figure>
+-->
+
+

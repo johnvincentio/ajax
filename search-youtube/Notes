@@ -1,0 +1,15 @@
+https://www.googleapis.com/youtube/v3/activities?part=snippet,contentDetails&channelId=UCTT1IjkUP2DV0wh4JCyjYRg&key=AIzaSyCC5pd3SNjKYcfU5hIR0IviT212w2bkQmM&maxResults=20
+
+returns videos I posted.
+
+youtube api credentials:
+AIzaSyCC5pd3SNjKYcfU5hIR0IviT212w2bkQmM
+
+channel:
+UCTT1IjkUP2DV0wh4JCyjYRg
+
+
+
+https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCC5pd3SNjKYcfU5hIR0IviT212w2bkQmM&q=niagara%20falls&maxResults=20
+
+

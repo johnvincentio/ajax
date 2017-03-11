@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        div#tooltip a {position: relative;}
+        div#tooltip a span {display: none;}
+        div#tooltip a:hover {text-indent: 0;}
+
+        div#tooltip a:hover span {
+            display: block;
+            position: absolute;
+            width: 125px;
+            padding: 5px;
+            margin: 10px;
+            z-index: 100;
+            color: black;
+            background-color: #FFFFCC;
+            border: 1px solid #ccc;
+            font: 10px Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #tooltip button {
+            border-radius: 50%;
+            border: 1px solid black;
+            padding-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="tooltip">
+            <a href="">
+                <button id="button">?</button>
+                <span>This is an example of some hover text!</span>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

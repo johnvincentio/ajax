@@ -1,0 +1,206 @@
+
+/*
+TODO;
+opacity
+transform
+transform img:hover
+
+transition...
+*/
+
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  /* choose a font */
+}
+
+html,
+body {
+    text-rendering: optimizeLegibility;
+    overflow: auto;
+}
+
+figure, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ----------------------------------- */
+/* Header */
+/* ----------------------------------- */
+
+header {
+    background-color: #e6ac00;
+}
+
+header h1 {
+    padding-top: 15px;
+    padding-bottom: 4px;
+    font-weight: 700;
+    font-size: 34px;
+}
+header p {
+    padding-top: 4px;
+    padding-bottom: 13px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ----------------------------------- */
+/* Section */
+/* ----------------------------------- */
+
+section {
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+
+/* ----------------------------------- */
+/* Search */
+/* ----------------------------------- */
+
+#search-box {
+    margin: 25px 15px 0 15px;
+}
+
+form {
+    position: relative;
+}
+
+.query {
+    width: 70%;
+    max-width: 540px;
+    height: 30px;
+}
+
+.search-button {
+    background-color: #e6ac00;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.search-button:hover {
+    background-color: bisque;
+    cursor: pointer;
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+/* ----------------------------------- */
+/* Row */
+/* ----------------------------------- */
+
+section .col-4 {
+    margin-top: 18px;
+}
+
+/* ----------------------------------- */
+/* Columns */
+/* ----------------------------------- */
+
+.box {
+    border: 1px solid lightgray;
+}
+.box img {
+    width: 100%;
+    height: auto;
+/*    opacity: 0.7;*/
+}
+.box img:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.05);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.5s opacity 0.5s;
+    transition: -webkit-transform 0.5s opacity 0.5s;
+    transition: transform 0.5s opacity 0.5s;
+    transition: transform 0.5s opacity 0.5s, -webkit-transform 0.5s opacity 0.5s;
+}
+
+.box>p {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.box>p>a:hover {
+    background-color: bisque;
+    cursor: pointer;
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+figcaption {
+    padding-bottom: 6px;
+    padding-left: 15px;
+    margin: 20px 0 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+figcaption p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+/* ----------------------------------- */
+/* Buttons */
+/* ----------------------------------- */
+
+.button {
+    background-color: #e6ac00;
+    width: 100px;
+    border-radius: 30px;
+    vertical-align: middle;
+    padding: 5px 0;
+    margin: 5px;
+}
+.button:hover {
+    background-color: bisque;
+    cursor: pointer;
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+/*
+form {
+    position: relative;
+}
+
+.query {
+    width: 100%;
+    max-width: 540px;
+    height: 30px;
+    padding-right: 60px;
+    overflow: hidden;
+}
+.search-button {
+    background-color: #e6ac00;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+*/
