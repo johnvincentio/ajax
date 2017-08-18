@@ -16,7 +16,7 @@ APP.model = {
     getOptions: function() {
         var options = {};
         options.part = 'snippet';
-        options.key = 'AIzaSyCC5pd3SNjKYcfU5hIR0IviT212w2bkQmM';
+        options.key = 'AIzaSyBzNmGF0uv03dT0t8jI1kYIo_cMkJBnPrs';
         options.maxResults = '9';
         return options;
     },
